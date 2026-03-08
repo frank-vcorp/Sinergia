@@ -1,0 +1,16 @@
+# Dependencies
+/node_modules
+
+# Firebase Emulators / Logs
+.firebase
+firebase-debug.log
+firebase-debug.*.log
+*.log
+# Environment variables
+.env
+.env.*
+
+# Data exports (do not version raw data)
+integra-rh-manus/data/exports/*.json
+integra-rh-manus/backups/
+integra-rh-manus/y/

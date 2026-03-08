@@ -1,0 +1,11 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Bridge: Generar Gemini Prompt",
+      "type": "shell",
+      "command": "npm --prefix contexto/bridge run bridge",
+      "problemMatcher": []
+    }
+  ]
+}

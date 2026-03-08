@@ -1,0 +1,60 @@
+{
+  "firestore": {
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
+  },
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "runtime": "nodejs20",
+      "v1": true
+    }
+  ],
+  "hosting": {
+    "target": "integra-rh",
+    "public": "integra-rh-manus/dist/public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/api/**",
+        "run": {
+          "serviceId": "api",
+          "region": "us-central1"
+        }
+      },
+      {
+        "source": "/asignarPruebasPsicometricas",
+        "function": "asignarPruebasPsicometricas"
+      },
+      {
+        "source": "/reenviarInvitacion",
+        "function": "reenviarInvitacion"
+      },
+      {
+        "source": "/manageUserRole",
+        "function": "manageUserRole"
+      },
+      {
+        "source": "/listUsers",
+        "function": "listUsers"
+      },
+      {
+        "source": "/listUsersHttp",
+        "function": "listUsersHttp"
+      },
+      {
+        "source": "**",
+        "run": {
+          "serviceId": "api",
+          "region": "us-central1"
+        }
+      }
+    ]
+  },
+  "storage": { "rules": "storage.rules" }
+}

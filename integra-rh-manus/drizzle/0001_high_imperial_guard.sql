@@ -1,0 +1,9 @@
+-- 0001_high_imperial_guard.sql
+-- Esta migración originalmente intentaba agregar las columnas
+-- `investigacionDetalle` y `desempenoScore` a `workHistory` usando
+-- la sintaxis `ADD COLUMN IF NOT EXISTS`, que no es compatible con
+-- la versión de MySQL/MariaDB de Railway.
+--
+-- Esas columnas ya están presentes en el esquema actual
+-- (y fueron creadas por migraciones anteriores), por lo que
+-- convertimos esta migración en un NO-OP para evitar errores de sintaxis.

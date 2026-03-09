@@ -1,0 +1,20 @@
+vite v7.1.9 building for production...
+(!) %VITE_APP_LOGO% is not defined in env variables found in /index.html. Is the variable mistyped?
+(!) %VITE_APP_LOGO% is not defined in env variables found in /index.html. Is the variable mistyped?
+(!) %VITE_APP_TITLE% is not defined in env variables found in /index.html. Is the variable mistyped?
+transforming...
+✓ 2 modules transformed.
+✗ Build failed in 74ms
+error during build:
+[vite]: Rollup failed to resolve import "@/lib/firebase" from "/root/antigravity-projects/Sinergia/integra-rh-manus/client/src/main.tsx".
+This is most likely unintended because it can break your application at runtime.
+If you do want to externalize this module explicitly add it to
+`build.rollupOptions.external`
+    at viteLog (file:///root/antigravity-projects/Sinergia/integra-rh-manus/node_modules/.pnpm/vite@7.1.9_@types+node@24.7.0_jiti@2.6.1_lightningcss@1.30.1_tsx@4.20.6/node_modules/vite/dist/node/chunks/dep-Chhhsdoe.js:33989:57)
+    at onRollupLog (file:///root/antigravity-projects/Sinergia/integra-rh-manus/node_modules/.pnpm/vite@7.1.9_@types+node@24.7.0_jiti@2.6.1_lightningcss@1.30.1_tsx@4.20.6/node_modules/vite/dist/node/chunks/dep-Chhhsdoe.js:34021:7)
+    at onLog (file:///root/antigravity-projects/Sinergia/integra-rh-manus/node_modules/.pnpm/vite@7.1.9_@types+node@24.7.0_jiti@2.6.1_lightningcss@1.30.1_tsx@4.20.6/node_modules/vite/dist/node/chunks/dep-Chhhsdoe.js:33821:4)
+    at file:///root/antigravity-projects/Sinergia/integra-rh-manus/node_modules/.pnpm/rollup@4.52.4/node_modules/rollup/dist/es/shared/node-entry.js:20937:32
+    at Object.logger [as onLog] (file:///root/antigravity-projects/Sinergia/integra-rh-manus/node_modules/.pnpm/rollup@4.52.4/node_modules/rollup/dist/es/shared/node-entry.js:22823:9)
+    at ModuleLoader.handleInvalidResolvedId (file:///root/antigravity-projects/Sinergia/integra-rh-manus/node_modules/.pnpm/rollup@4.52.4/node_modules/rollup/dist/es/shared/node-entry.js:21567:26)
+    at file:///root/antigravity-projects/Sinergia/integra-rh-manus/node_modules/.pnpm/rollup@4.52.4/node_modules/rollup/dist/es/shared/node-entry.js:21525:26
+    at async Promise.all (index 0)

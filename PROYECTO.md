@@ -272,6 +272,12 @@
   - **Checkpoint:** `Checkpoints/CHK_2026-02-17_FIX-PLAZAS-95-PERCENT.md` (pendiente crear tras resolver IP)
   - **ID de Intervención:** IMPL-20260217-03 (Sofia - Builder)
 
+### SINERGIA-ESTUDIO: Fase de Pulido (Sprints)
+- `[✓]` SPRINT-01: Línea del Tiempo y Guía (Analista) — IMPL-20260309-01
+  - *Línea del tiempo dinámica en ProcesoDetalle con estados técnicos mapeados a etiquetas visuales.*
+  - *Refactorización integral de componentes de imagen (ImageGallery, LightboxViewer) y hooks para optimización de UX.*
+  - *Checkpoint: `Checkpoints/CHK_2026-03-09_SPRINT-01-COMPLETO.md`*
+
 ### Mejoras de DX (Developer Experience)
 - `[ ]` DX-AG-01: Validar agente DEBY (Deep Debugging) con un caso real de error.
 
